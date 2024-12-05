@@ -1,10 +1,7 @@
 name: 1- building the workflow
 
 on:
-  push:
-  schedule:
-    - cron:
-        '* * * * *'
+  push
 
 jobs:
   echo-hello-world:
