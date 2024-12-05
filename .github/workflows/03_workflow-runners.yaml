@@ -15,5 +15,5 @@ jobs:
       windows-latest
     steps:
       - name : shell
-      - shell : bash
-      - run: echo "bye - Runner OS $RUNNER_OS"
+        shell : bash
+        run: echo "bye - Runner OS $RUNNER_OS"
