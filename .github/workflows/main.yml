@@ -5,7 +5,7 @@ on:
     branches:
       - 'master'     # Trigger on push to the main branch
     paths:
-      - 'server/**'   # Only trigger if files in the 'src' directory are modified
+      - 'server/**'   # Only trigger if files in the 'server' directory are modified
 
 jobs:
   echo-hello-world:
