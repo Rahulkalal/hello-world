@@ -1,13 +1,21 @@
-name: Trigger on Branch Patterns for Push
+name: 1- building the workflow
 
 on:
   push:
-    branches:
-      - 'master'     # Trigger on push to the main branch
-      - 'develop'  # Trigger on push to the develop branc
+    branches :
+      - 'master'
+      - 'develop'
 
 jobs:
   echo-hello-world:
-    runs-on: ubuntu-latest
+    runs-on:
+      ubuntu-latest
     steps:
       - run: echo "hello-world - Runner OS $RUNNER_OS"
+  echo-say-good-bye:
+    runs-on:
+      windows-latest
+    steps:
+      - name : shell
+        shell : bash
+        run: echo "bye - Runner OS $RUNNER_OS"
