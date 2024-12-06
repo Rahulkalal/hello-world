@@ -1,6 +1,6 @@
 name: 1- building the workflow
 
-on:
+#on:
   push:
   workflow_dispatch:
 
