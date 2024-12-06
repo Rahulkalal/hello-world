@@ -1,16 +1,1 @@
-name: 1- building the workflow
 
-on:
-  push
-
-jobs:
-  echo-hello-world:
-    runs-on:
-      ubuntu-latest
-    steps:
-      - run: echo "hello-world"
-  echo-say-good-bye:
-    runs-on:
-      ubuntu-latest
-    steps:
-      - run: echo "bye"
