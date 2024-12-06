@@ -1,11 +1,9 @@
-name: Trigger on Push to Specific Branches and Paths
+name: Trigger on Specific Path Change
 
 on:
   push:
-    branches:
-      - 'master'     # Trigger on push to the main branch
     paths:
-      - 'server/**'   # Only trigger if files in the 'server' directory are modified
+      - 'src/**'  # Only run if files in the 'src' directory are changed
 
 jobs:
   echo-hello-world:
