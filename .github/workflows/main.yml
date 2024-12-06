@@ -1,21 +1,14 @@
-name: 1- building the workflow
+name: Trigger on Push to Specific Branches and Paths
 
 on:
   push:
-    branches :
-      - 'master'
-      - 'develop'
+    branches:
+      - 'master'     # Trigger on push to the main branch
+    paths:
+      - 'src/**'   # Only trigger if files in the 'src' directory are modified
 
 jobs:
   echo-hello-world:
-    runs-on:
-      ubuntu-latest
+    runs-on: ubuntu-latest
     steps:
       - run: echo "hello-world - Runner OS $RUNNER_OS"
-  echo-say-good-bye:
-    runs-on:
-      windows-latest
-    steps:
-      - name : shell
-        shell : bash
-        run: echo "bye - Runner OS $RUNNER_OS"
