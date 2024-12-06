@@ -3,7 +3,7 @@ name: Trigger on Specific Path Change
 on:
   push:
     paths:
-      - 'src/**'  # Only run if files in the 'src' directory are changed
+      - 'server/**'  # Only run if files in the 'server' directory are changed
 
 jobs:
   echo-hello-world:
