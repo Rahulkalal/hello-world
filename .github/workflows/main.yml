@@ -1,9 +1,10 @@
-name: Trigger on Specific Path Change
+name: Trigger on Pull Request to Multiple Branches
 
 on:
-  push:
-    paths:
-      - 'server/**'  # Only run if files in the 'server' directory are changed
+  pull_request:
+    branches:
+      - 'master'     # Trigger on pull request to the main branch
+      - 'develop'  # Trigger on pull request to the develop branch
 
 jobs:
   echo-hello-world:
